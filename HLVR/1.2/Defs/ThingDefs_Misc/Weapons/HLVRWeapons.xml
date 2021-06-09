@@ -117,12 +117,20 @@
 <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>HL_CombineMG</defName>
     <label>combine machine gun</label>
-    <description>A multi-barrel machine gun. It's unwieldy, but once it starts firing it fires very fast. Where most self-loading guns are powered by the energy from the gunpowder, the minigun uses an electric motor to rapidly cycle cartridges through the weapon.</description>
+    <description>Combine's take on the classic minigun design. This pulse machine gun, while only sporting a single barrel unlike its inspration, still posesses a spinup until it can fire.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/combine_mg</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.3</drawSize>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/combine_mg</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_Rifle</soundInteract>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
@@ -195,11 +203,19 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>HL_Alyxgun</defName>
     <label>modified autopistol</label>
-    <description>An ancient pattern blowback-operated self-loading pistol. It lacks stopping power and range, but is quick to fire.</description>
+    <description>An ancient pattern blowback-operated self-loading pistol. It lacks stopping power and range, but is quick to fire. This one has been modified in a combine fabricator, adding burst fire to it.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/alyxgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/alyxgun</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <recipeMaker>
@@ -275,12 +291,20 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>HL_CombineShotgun</defName>
     <label>combine pulse shotgun</label>
-    <description>An ancient design of shotgun that emits a tight-packed spray of pellets. Deadly, but short range.</description>
+    <description>A heavy pulse shotgun, firing multiple pellets of energy effectively working in an identical fashion to classic shotguns.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/combine_heavy_shotgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.12</drawSize>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/combine_heavy_shotgun</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_Shotgun</soundInteract>
     <statBases>
       <WorkToMake>12000</WorkToMake>
@@ -462,6 +486,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/m16</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/m16</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_HL1</soundInteract>
     <recipeMaker>
       <researchPrerequisite>GasOperation</researchPrerequisite>
@@ -578,6 +610,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/displacer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/displacer</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_HL1</soundInteract>
     <generateCommonality>0.1</generateCommonality>
     <statBases>
@@ -688,6 +728,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/tau_mk1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/tau_mk1</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_HL1</soundInteract>
     <recipeMaker>
       <researchPrerequisite>GasOperation</researchPrerequisite>
@@ -823,6 +871,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/saw</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/saw</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_HL1</soundInteract>
     <recipeMaker>
       <researchPrerequisite>GasOperation</researchPrerequisite>
@@ -904,6 +960,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/crossbow_tranq</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/crossbow_tranq</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_HL1</soundInteract>
     <recipeMaker>
       <researchPrerequisite>GasOperation</researchPrerequisite>
@@ -1025,6 +1089,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/HLrocketlauncher</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/HLrocketlauncher</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_HL1</soundInteract>
     <generateCommonality>0.3</generateCommonality>
     <statBases>
@@ -1104,6 +1176,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/rpg</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/rpg</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_HL2</soundInteract>
     <generateCommonality>0.3</generateCommonality>
     <statBases>
@@ -1184,6 +1264,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/hl1shotgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/hl1shotgun</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_HL1</soundInteract>
     <statBases>
       <WorkToMake>12000</WorkToMake>
@@ -1260,6 +1348,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/hl2shotgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/hl2shotgun</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_HL2</soundInteract>
     <statBases>
       <WorkToMake>12000</WorkToMake>
@@ -1336,6 +1432,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/hlashotgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/hlashotgun</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>12000</WorkToMake>
@@ -1414,6 +1518,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/python</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/python</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_HL2</soundInteract>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
@@ -1481,6 +1593,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/glock</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/glock</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_HL1</soundInteract>
     <recipeMaker>
@@ -1546,6 +1666,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/usp</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/usp</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_HL2</soundInteract>
     <recipeMaker>
@@ -1611,6 +1739,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/mp7</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/mp7</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_HL2</soundInteract>
     <recipeMaker>
       <researchPrerequisite>GasOperation</researchPrerequisite>
@@ -1678,6 +1814,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/oicw</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/oicw</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_HL2</soundInteract>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
@@ -1745,6 +1889,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/annabelle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/annabelle</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_HL2</soundInteract>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
@@ -1813,6 +1965,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/hl2crossbow</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/hl2crossbow</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_HL2</soundInteract>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
@@ -1895,6 +2055,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/ar2</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/ar2</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_HL2</soundInteract>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
@@ -1962,6 +2130,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/hivehand</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/hivehand</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_HL1</soundInteract>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
@@ -2032,6 +2208,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/shockroach</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/shockroach</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_Shockroach</soundInteract>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
@@ -2102,6 +2286,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/sporelauncher</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/sporelauncher</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <soundInteract>Interact_Sporelauncher</soundInteract>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
@@ -2173,6 +2365,14 @@
       <texPath>Things/Item/Equipment/WeaponRanged/ipistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Item/Equipment/WeaponRanged/ipistol</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <recipeMaker>

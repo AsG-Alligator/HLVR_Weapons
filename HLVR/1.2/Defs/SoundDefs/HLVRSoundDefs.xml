@@ -321,8 +321,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Clip">
-            <clipPath>HLVRWeapons/OICW/oicw_fire</clipPath>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>HLVRWeapons/OICW</clipFolderPath>
           </li>
         </grains>      
         <volumeRange>20.70588~20.70588</volumeRange>      
