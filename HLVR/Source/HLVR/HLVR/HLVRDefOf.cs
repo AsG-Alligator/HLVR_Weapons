@@ -15,5 +15,9 @@ namespace HLVR
 
         public static SoundDef HEV_EquipValve;
 
+        public static SoundDef HEV_Flatline;
+
+        public static SoundDef HEV_ToxinsDetected;
+
     }
 }

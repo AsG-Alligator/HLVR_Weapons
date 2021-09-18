@@ -8,18 +8,14 @@ namespace HLVR
 {
     class ApparelEquipSoundIV : ThingComp
     {
-        public override void CompTick()
+        public override void Notify_Equipped(Pawn pawn)
         {
-            base.CompTick();
-            if (!this.PlayedSoundOnce)
-            {
-                SoundDef sound = HLVRDefOf.HEV_EquipIV as SoundDef;
-                sound.PlayOneShot(new TargetInfo(this.parent.Position, this.parent.Map, false));
-                this.PlayedSoundOnce = true;
-            }
+            SoundDef sound = HLVRDefOf.HEV_EquipIV as SoundDef;
+            sound.PlayOneShot(new TargetInfo(pawn.Position, pawn.Map, false));
+            base.Notify_Equipped(pawn);
         }
 
-        private bool PlayedSoundOnce = false;
+
     }
 
     class CompProperties_ApparelEquipSoundIV : CompProperties
@@ -32,18 +28,12 @@ namespace HLVR
 
     class ApparelEquipSoundV : ThingComp
     {
-        public override void CompTick()
+        public override void Notify_Equipped(Pawn pawn)
         {
-            base.CompTick();
-            if (!this.PlayedSoundOnce)
-            {
-                SoundDef sound = HLVRDefOf.HEV_EquipValve as SoundDef;
-                sound.PlayOneShot(new TargetInfo(this.parent.Position, this.parent.Map, false));
-                this.PlayedSoundOnce = true;
-            }
+            SoundDef sound = HLVRDefOf.HEV_EquipValve as SoundDef;
+            sound.PlayOneShot(new TargetInfo(pawn.Position, pawn.Map, false));
+            base.Notify_Equipped(pawn);
         }
-
-        private bool PlayedSoundOnce = false;
     }
 
     class CompProperties_ApparelEquipSoundV : CompProperties
@@ -53,4 +43,5 @@ namespace HLVR
             this.compClass = typeof(ApparelEquipSoundV);
         }
     }
+
 }

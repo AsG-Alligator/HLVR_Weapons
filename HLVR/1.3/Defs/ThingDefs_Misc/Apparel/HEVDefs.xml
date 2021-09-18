@@ -16,6 +16,9 @@
         <li>FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
+	<comps>
+      <li Class="HLVR.CompProperties_ApparelEquipSoundIV"/>
+	</comps>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/HEV/Mark4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -66,9 +69,6 @@
     <thingSetMakerTags>
       <li>RewardStandardHighFreq</li>
     </thingSetMakerTags>
-    <comps>
-	  <li Class="HLVR.CompProperties_ApparelEquipSoundIV" />
-    </comps>
   </ThingDef>
   
   <ThingDef ParentName="ArmorMachineableBase">
@@ -86,11 +86,15 @@
         <li>FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
+	<comps>
+      <li Class="HLVR.CompProperties_ApparelEquipSoundV"/>
+	</comps>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/HEV/Mark5</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1</drawSize>
     </graphicData>
+	<soundInteract>HEV_EquipV</soundInteract>
     <generateCommonality>2</generateCommonality>
     <statBases>
       <WorkToMake>60000</WorkToMake>
@@ -136,9 +140,6 @@
     <thingSetMakerTags>
       <li>RewardStandardHighFreq</li>
     </thingSetMakerTags>
-    <comps>
-	  <li Class="HLVR.CompProperties_ApparelEquipSoundV"/>
-    </comps>
   </ThingDef>
   
   </Defs>

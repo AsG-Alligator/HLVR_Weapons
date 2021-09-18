@@ -52,4 +52,38 @@
     </subSounds>
 </SoundDef>
 
+<SoundDef>
+    <defName>HEV_Flatline</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>2</maxVoices>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>HEV/Flatline</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>33.52942~33.52942</volumeRange>
+      </li>
+    </subSounds>
+</SoundDef>
+
+<SoundDef>
+    <defName>HEV_ToxinsDetected</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>2</maxVoices>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>HEV/BloodToxins</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>33.52942~33.52942</volumeRange>
+      </li>
+    </subSounds>
+</SoundDef>
+
 </Defs>
