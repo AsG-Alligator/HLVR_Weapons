@@ -91,7 +91,7 @@
 </SoundDef>
 
   
-    <SoundDef>
+<SoundDef>
     <defName>Shot_CombineShotgun</defName>  
     <context>MapOnly</context>  
     <maxSimultaneous>1</maxSimultaneous>  
@@ -230,6 +230,108 @@
 </SoundDef>
 
   <SoundDef>
+    <defName>HL1_Crowbar_Hit</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>8</maxVoices>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>HLVRWeapons/Crowbar/Hit</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>33.52942~33.52942</volumeRange>
+      </li>
+    </subSounds>
+</SoundDef>
+
+  <SoundDef>
+    <defName>HL1_Crowbar_HitPawn</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>8</maxVoices>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>HLVRWeapons/Crowbar/HitPawn</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>33.52942~33.52942</volumeRange>
+      </li>
+    </subSounds>
+</SoundDef>
+
+  <SoundDef>
+    <defName>HL1_Crowbar_Miss</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>8</maxVoices>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>HLVRWeapons/Crowbar/Miss</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>33.52942~33.52942</volumeRange>
+      </li>
+    </subSounds>
+</SoundDef>
+
+  <SoundDef>
+    <defName>HL2_Stunstick_Hit</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>8</maxVoices>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>HLVRWeapons/Stunstick/Hit</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>33.52942~33.52942</volumeRange>
+      </li>
+    </subSounds>
+</SoundDef>
+
+  <SoundDef>
+    <defName>HL2_Stunstick_HitPawn</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>8</maxVoices>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>HLVRWeapons/Stunstick/HitPawn</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>33.52942~33.52942</volumeRange>
+      </li>
+    </subSounds>
+</SoundDef>
+
+  <SoundDef>
+    <defName>HL2_Stunstick_Miss</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>8</maxVoices>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>HLVRWeapons/Stunstick/Miss</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>33.52942~33.52942</volumeRange>
+      </li>
+    </subSounds>
+</SoundDef>
+
+  <SoundDef>
     <defName>Shot_HL2Crossbow</defName>  
     <context>MapOnly</context>  
     <maxVoices>8</maxVoices>  
@@ -332,6 +434,23 @@
   </SoundDef>
   
   <SoundDef>
+    <defName>Shot_CombineSniper</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>HLVRWeapons/CombineSniper</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>20.70588~20.70588</volumeRange>      
+        <distRange>39.11765~70</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
     <defName>Shot_HLGrenadeLauncher</defName>  
     <context>MapOnly</context>  
     <maxSimultaneous>1</maxSimultaneous>  
@@ -376,7 +495,7 @@
             <clipPath>HLVRWeapons/Glock/glock_fire</clipPath>
           </li>
         </grains>      
-        <volumeRange>70.70588~70</volumeRange>      
+        <volumeRange>40.70588~40</volumeRange>      
         <distRange>39.11765~70</distRange>
       </li>
     </subSounds>
@@ -393,7 +512,7 @@
             <clipPath>HLVRWeapons/USP/usp_fire</clipPath>
           </li>
         </grains>      
-        <volumeRange>80.70588~80.70588</volumeRange>      
+        <volumeRange>30.70588~30.70588</volumeRange>      
         <distRange>39.11765~70</distRange>
       </li>
     </subSounds>

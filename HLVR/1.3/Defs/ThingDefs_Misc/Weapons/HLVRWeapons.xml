@@ -14,7 +14,7 @@
  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
     <defName>HL_Crowbar</defName>
     <label>crowbar</label>
-    <description>Iconic piece of hardware wielded by your favorite theoretical physicist. Despite it's legendary status it is not very strong, but offers both blunt and sharp damage.</description>
+    <description>Iconic piece of hardware once wielded by your favorite theoretical physicist. Despite it's legendary status it is not very strong.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponMelee/crowbar</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -41,19 +41,11 @@
     <tools>
       <li>
         <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>point</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>12</power>
+        <power>9</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -69,7 +61,6 @@
     </graphicData>
     <uiIconScale>1.2</uiIconScale>
     <techLevel>Industrial</techLevel>
-    <costStuffCount>50</costStuffCount>
     <statBases>
       <WorkToMake>6000</WorkToMake>
       <Mass>1.25</Mass>
@@ -80,9 +71,10 @@
         <Crafting>3</Crafting>
       </skillRequirements>
     </recipeMaker>
-    <stuffCategories>
-      <li>Metallic</li>
-    </stuffCategories>
+	<costList>
+      <Plasteel>10</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
     <weaponTags>
       <li>MedievalMeleeDecent</li>
     </weaponTags>
@@ -136,18 +128,18 @@
     <statBases>
       <WorkToMake>60000</WorkToMake>
       <Mass>10</Mass>
-      <AccuracyTouch>0.15</AccuracyTouch>
-      <AccuracyShort>0.25</AccuracyShort>
-      <AccuracyMedium>0.25</AccuracyMedium>
-      <AccuracyLong>0.18</AccuracyLong>
+      <AccuracyTouch>0.2</AccuracyTouch>
+      <AccuracyShort>0.3</AccuracyShort>
+      <AccuracyMedium>0.3</AccuracyMedium>
+      <AccuracyLong>0.2</AccuracyLong>
       <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
     </statBases>
 	<costList>
-      <Steel>160</Steel>
+      <Plasteel>160</Plasteel>
       <ComponentIndustrial>20</ComponentIndustrial>
     </costList>
     <recipeMaker>
-      <researchPrerequisite>MultibarrelWeapons</researchPrerequisite>
+      <researchPrerequisite>ChargedShot</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -238,6 +230,7 @@
     </statBases>
     <costList>
       <Steel>30</Steel>
+	  <Plasteel>5</Plasteel>
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <verbs>
@@ -309,17 +302,18 @@
     <statBases>
       <WorkToMake>12000</WorkToMake>
       <Mass>3.4</Mass>
-      <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.87</AccuracyShort>
-      <AccuracyMedium>0.77</AccuracyMedium>
-      <AccuracyLong>0.64</AccuracyLong>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.92</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
       <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>60</Steel>
+      <Plasteel>60</Plasteel>
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <recipeMaker>
+	  <researchPrerequisite>ChargedShot</researchPrerequisite>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
@@ -626,11 +620,13 @@
       <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>175</Steel>
+      <Steel>40</Steel>
+	  <Plasteel>80</Plasteel>
       <ComponentIndustrial>4</ComponentIndustrial>
 	  <ComponentSpacer>5</ComponentSpacer>
     </costList>
     <recipeMaker>
+	  <researchPrerequisite>ChargedShot</researchPrerequisite>
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
@@ -652,6 +648,9 @@
         </targetParams>
       </li>
     </verbs>
+	<weaponTags>
+      <li>SpacerGun</li>
+    </weaponTags>
     <tools>
       <li>
         <label>stock</label>
@@ -723,7 +722,7 @@
     <defName>HL_TauCannon</defName>
     <label>Tau Cannon</label>
 	<thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
-    <description>A prototype energy-based assault rifle, the Tau Cannon is a weapon developed by scientists at Black Mesa. Its advanced technology allows it to use depleted Uranium-235 as fuel.</description>
+    <description>A prototype energy-based assault rifle, the Tau Cannon is a weapon developed by scientists at Black Mesa. Its advanced technology allows it to use depleted Uranium-235 as fuel. It fires a concentrated beam of high energy particles. Has a chance to set hit targets on fire.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/tau_mk1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -738,7 +737,7 @@
 	</modExtensions>
     <soundInteract>Interact_HL1</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <researchPrerequisite>ChargedShot</researchPrerequisite>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
@@ -754,8 +753,10 @@
       <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>75</Steel>
+      <Steel>70</Steel>
+	  <Plasteel>50</Plasteel>
       <ComponentIndustrial>4</ComponentIndustrial>
+	  <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <verbs>
       <li>
@@ -772,7 +773,7 @@
       </li>
     </verbs>
     <weaponTags>
-      <li>IndustrialGunAdvanced</li>
+      <li>SpacerGun</li>
     </weaponTags>
     <tools>
       <li>
@@ -897,7 +898,7 @@
       <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>75</Steel>
+      <Steel>90</Steel>
       <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <verbs>
@@ -2045,6 +2046,89 @@
       <speed>100</speed>
     </projectile>
   </ThingDef>
+  
+    <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>HL_CombineSniper</defName>
+    <label>Combine sniper rifle</label>
+    <description>Combines' take on a sniper rifle design. It fires focused pulse projectiles over a long distance.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/combinesniper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_HL2</soundInteract>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.93</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Plasteel>60</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CombineSniperRifle</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>44.9</range>
+        <soundCast>Shot_CombineSniper</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>SniperRifle</li>
+    </weaponTags>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CombineSniperRifle</defName>
+    <label>sniper pulse round</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
 
   
   <ThingDef ParentName="BaseHumanMakeableGun">
@@ -2065,7 +2149,7 @@
 	</modExtensions>
     <soundInteract>Interact_HL2</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <researchPrerequisite>ChargedShot</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
@@ -2081,7 +2165,7 @@
       <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>60</Steel>
+      <Plasteel>60</Plasteel>
       <ComponentIndustrial>7</ComponentIndustrial>
     </costList>
     <verbs>
@@ -2122,7 +2206,7 @@
     </tools>
   </ThingDef>
   
-<ThingDef ParentName="BaseGunWithQuality">
+<ThingDef ParentName="BaseGun">
     <defName>HL_Hivehand</defName>
     <label>Hivehand</label>
     <description>The hivehand, or the hornet gun is an organic weapon used by the alien grunts from Xen. It fires homing "hornets" that give it great accuracy, however the damage output of the weapon is low. It fires a burst of 8 hornets at low rate of fire, and requires a recharge after firing. Since it is a living creature it cannot be manufactured.</description>
@@ -2200,10 +2284,10 @@
     </projectile>
   </ThingDef>
   
-  <ThingDef ParentName="BaseGunWithQuality">
+  <ThingDef ParentName="BaseGun">
     <defName>HL_Shockroach</defName>
     <label>Shockroach</label>
-    <description>The Shock Roach has all the characteristics of a large insect, with six legs and a tri-segmented body. Unlike the Hive Hand, the bio-weapon employed by Alien Grunts, the Shock Roach can move, react and attack of its own accord, as it is a living creature. It cannot be manufactured.</description>
+    <description>The Shock Roach has all the characteristics of a large insect, with six legs and a tri-segmented body. Unlike the Hive Hand, the bio-weapon employed by Alien Grunts, the Shock Roach can move, react and attack of its own accord. As it is a living creature, it cannot be manufactured.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/shockroach</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -2376,7 +2460,7 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <researchPrerequisite>ChargedShot</researchPrerequisite>
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
@@ -2387,14 +2471,14 @@
     <statBases>
       <WorkToMake>5000</WorkToMake>
       <Mass>1.2</Mass>
-      <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.70</AccuracyShort>
-      <AccuracyMedium>0.40</AccuracyMedium>
-      <AccuracyLong>0.30</AccuracyLong>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.74</AccuracyShort>
+      <AccuracyMedium>0.43</AccuracyMedium>
+      <AccuracyLong>0.32</AccuracyLong>
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>30</Steel>
+      <Plasteel>30</Plasteel>
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <verbs>
@@ -2564,7 +2648,7 @@
     </stuffCategories>
     <costStuffCount>100</costStuffCount>
     <costList>
-      <Steel>70</Steel>
+      <Plasteel>70</Plasteel>
       <ComponentIndustrial>6</ComponentIndustrial>
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -2582,7 +2666,7 @@
     </placeWorkers>
     <designationHotKey>Misc2</designationHotKey>
     <researchPrerequisites>
-      <li>GunTurrets</li>
+      <li>ChargedShot</li>
     </researchPrerequisites>
   </ThingDef>
 
